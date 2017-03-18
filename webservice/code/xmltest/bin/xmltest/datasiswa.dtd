@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <xs:import namespace="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="xsixml"/>
+    <xs:element name="datasiswa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="datadiri"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="orangtua"/>
+                <xs:element ref="sekolah"/>
+                <xs:element ref="nilai"/>
+            </xs:sequence>
+            <xs:attribute ref="xsi:noNamespaceSchemaLocation" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="datadiri">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="tgllahir"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="tgllahir" type="xs:string"/>
+    <xs:element name="alamat">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="desa"/>
+                <xs:element ref="kecamatan"/>
+                <xs:element ref="kabupaten"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="desa" type="xs:NCName"/>
+    <xs:element name="kecamatan" type="xs:NCName"/>
+    <xs:element name="kabupaten" type="xs:NCName"/>
+    <xs:element name="orangtua">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="namabapak"/>
+                <xs:element ref="namaibu"/>
+                <xs:element ref="alamatorangtua"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="namabapak" type="xs:string"/>
+    <xs:element name="namaibu" type="xs:string"/>
+    <xs:element name="alamatorangtua" type="xs:string"/>
+    <xs:element name="sekolah">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="asal"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="asal" type="xs:string"/>
+    <xs:element name="nilai">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ulangan"/>
+                <xs:element ref="uts"/>
+                <xs:element ref="uas"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ulangan" type="xs:integer"/>
+    <xs:element name="uts" type="xs:integer"/>
+    <xs:element name="uas" type="xs:integer"/>
+    <xs:element name="nama" type="xs:string"/>
+</xs:schema>

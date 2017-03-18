@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE jasa SYSTEM "jasa.dtd">
+<jasa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="jasa.xsd">
+	<perusahaan>
+		<nama>konfeksi</nama>
+		<jenisperusahaan>Konfeksi</jenisperusahaan>
+		<alamat>Jln Buah Batu No.14</alamat>
+	</perusahaan>
+	<konfeksi>
+		<jeniskonfeksi>jeanes</jeniskonfeksi>
+		<jumlahproduksi>2000 per hari</jumlahproduksi>
+	</konfeksi>
+	<biaya>
+		<biayaproduksi>200000000</biayaproduksi>
+		<biayaperbaikanmesin>20000000000</biayaperbaikanmesin>
+	</biaya>
+	<karyawan status = "aktif">
+		<lakilaki>200</lakilaki>
+		<perempuan>300</perempuan>
+	</karyawan>
+	<karyawan status = "tidak aktif">
+		<lakilaki>10</lakilaki>
+		<perempuan>30</perempuan>
+	</karyawan>
+	<cabang>
+		<namacabang>Konfeksi Pakaian Kaos</namacabang>
+		<jenis>Kaos</jenis>
+	</cabang>
+</jasa>
+	

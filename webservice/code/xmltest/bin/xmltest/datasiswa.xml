@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE datasiswa SYSTEM "datasiswa.dtd">
+<datasiswa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datasiswa.xsd">
+	<datadiri>
+		<nama>Riri Sumantri</nama>
+		<tgllahir>17 Juni 1997</tgllahir>
+	</datadiri>
+	<alamat>
+		<desa>Gendereh</desa>
+		<kecamatan>Buahdua</kecamatan>
+		<kabupaten>Sumedang</kabupaten>
+	</alamat>
+	<orangtua>
+		<namabapak>Dedi Kusnadi</namabapak>
+		<namaibu>Nina Marlina</namaibu>
+		<alamatorangtua>Gendereh Kecamatan Buahdua Kabupaten Sumedang</alamatorangtua>
+	</orangtua>
+	<sekolah>
+		<nama>SMP 1 Buhadua</nama>
+		<asal>SD Gendereh</asal>
+	</sekolah>
+	<nilai>
+		<ulangan>80</ulangan>
+		<uts>90</uts>
+		<uas>90</uas>
+	</nilai>
+</datasiswa>
+	

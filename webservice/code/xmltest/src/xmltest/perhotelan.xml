@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE perhotelan SYSTEM "perhotelan.dtd">
+<perhotelan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="perhotelan.xsd">
+	<datahotel>
+		<nama>Hegar Manah</nama>
+		<alamat>Sumedang</alamat>
+	</datahotel>
+	<pegawaihotel>
+		<nama>Didin</nama>
+		<umur>30</umur>
+		<jabatan>Manager Hotel</jabatan>
+	</pegawaihotel>
+	<jumlahtipekamar>
+		<single>15</single>
+		<double>20</double>
+		<king>30</king>
+		<suite>10</suite>
+	</jumlahtipekamar>
+	<biayahotel>
+		<menginap>Tergantung Tipe Kamar</menginap>
+		<pembayaranpegawai>Tergantung jenis jabatan</pembayaranpegawai>
+		<biayarenovasi>Tergantung jenis renovasi</biayarenovasi>
+	</biayahotel>
+	<fasilitas>
+		<jenis>lapangan</jenis>
+		<fungsi>olahraga</fungsi>
+		<luas>200 m</luas>
+	</fasilitas>
+</perhotelan>
+	

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <xs:import namespace="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="xsixml"/>
+    <xs:element name="manufacture">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="perusahaan"/>
+                <xs:element ref="konfeksi"/>
+                <xs:element ref="biaya"/>
+                <xs:element maxOccurs="unbounded" ref="karyawan"/>
+                <xs:element ref="cabang"/>
+            </xs:sequence>
+            <xs:attribute ref="xsi:noNamespaceSchemaLocation" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="perusahaan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="jenisperusahaan"/>
+                <xs:element ref="alamat"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nama" type="xs:NCName"/>
+    <xs:element name="jenisperusahaan" type="xs:NCName"/>
+    <xs:element name="alamat" type="xs:string"/>
+    <xs:element name="konfeksi">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="jeniskonfeksi"/>
+                <xs:element ref="jumlahproduksi"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="jeniskonfeksi" type="xs:NCName"/>
+    <xs:element name="jumlahproduksi" type="xs:string"/>
+    <xs:element name="biaya">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="biayaproduksi"/>
+                <xs:element ref="biayaperbaikanmesin"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="biayaproduksi" type="xs:integer"/>
+    <xs:element name="biayaperbaikanmesin" type="xs:integer"/>
+    <xs:element name="karyawan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="lakilaki"/>
+                <xs:element ref="perempuan"/>
+            </xs:sequence>
+            <xs:attribute name="status" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="lakilaki" type="xs:integer"/>
+    <xs:element name="perempuan" type="xs:integer"/>
+    <xs:element name="cabang">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="namacabang"/>
+                <xs:element ref="jenis"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="namacabang" type="xs:string"/>
+    <xs:element name="jenis" type="xs:NCName"/>
+</xs:schema>

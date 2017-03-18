@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <xs:import namespace="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="xsixml"/>
+    <xs:element name="perhotelan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="datahotel"/>
+                <xs:element ref="pegawaihotel"/>
+                <xs:element ref="jumlahtipekamar"/>
+                <xs:element ref="biayahotel"/>
+                <xs:element ref="fasilitas"/>
+            </xs:sequence>
+            <xs:attribute ref="xsi:noNamespaceSchemaLocation" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="datahotel">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="alamat"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="alamat" type="xs:NCName"/>
+    <xs:element name="pegawaihotel">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="umur"/>
+                <xs:element ref="jabatan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="umur" type="xs:integer"/>
+    <xs:element name="jabatan" type="xs:string"/>
+    <xs:element name="jumlahtipekamar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="single"/>
+                <xs:element ref="double"/>
+                <xs:element ref="king"/>
+                <xs:element ref="suite"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="single" type="xs:integer"/>
+    <xs:element name="double" type="xs:integer"/>
+    <xs:element name="king" type="xs:integer"/>
+    <xs:element name="suite" type="xs:integer"/>
+    <xs:element name="biayahotel">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="menginap"/>
+                <xs:element ref="pembayaranpegawai"/>
+                <xs:element ref="biayarenovasi"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="menginap" type="xs:string"/>
+    <xs:element name="pembayaranpegawai" type="xs:string"/>
+    <xs:element name="biayarenovasi" type="xs:string"/>
+    <xs:element name="fasilitas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="jenis"/>
+                <xs:element ref="fungsi"/>
+                <xs:element ref="luas"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="jenis" type="xs:NCName"/>
+    <xs:element name="fungsi" type="xs:NCName"/>
+    <xs:element name="luas" type="xs:string"/>
+    <xs:element name="nama" type="xs:string"/>
+</xs:schema>
